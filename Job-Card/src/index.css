@@ -1,0 +1,150 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html,
+body{
+  height:100%;
+  width:100%;
+}
+
+.parent{
+  min-height:100vh;
+  width:100%;
+  background-color:black;
+  padding:30px;
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+/* CARD */
+.card{
+  height:330px;
+  width:250px;
+  background-color:#fff;
+  border-radius:30px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* TOP */
+.card .top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:25px;
+}
+
+.top img{
+  height:45px;
+  width:55px;
+  border-radius:50%;
+  border:1px solid #e5e5e5;
+  object-fit:contain;
+  padding:6px;
+  background-color:#fff;
+}
+
+/* SAVE BUTTON */
+.top button{
+  display:flex;
+  align-items:center;
+  border:1px solid #dadada;
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:12px;
+  gap:3px;
+  background-color:transparent;
+  color:#8b8b8b;
+  cursor:pointer;
+  transition: all 0.25s ease;
+}
+
+.top button:hover{
+  background-color:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+/* CENTER */
+.center h3{
+  font-size:17px;
+  font-weight:500;
+  color:#333;
+}
+
+.center h3 span{
+  font-size:10px;
+  font-weight:400;
+  color:#8b8b8b;
+}
+
+.center h2{
+  font-size:20px;
+  font-weight:600;
+  margin-top:5px;
+  color:#111;
+}
+
+.center .tag{
+  display:flex;
+  margin-top:12px;
+  gap:6px;
+}
+
+.center .tag h4{
+  font-size:12px;
+  background-color:#f1f1f1;
+  color:#333;
+  font-weight:500;
+  padding:4px 8px;
+  border-radius:6px;
+}
+
+/* BOTTOM */
+.bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top: 1px solid #e0e0e0;
+  padding-top:15px; 
+}
+
+.bottom button{
+  background-color:black;
+  color:white;
+  padding:6px 12px;
+  border:none;
+  border-radius:6px;
+  font-size:12px;
+  cursor:pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.bottom button:hover{
+  background-color:#333;
+  transform: scale(1.05);
+}
+
+.bottom h3{
+  font-size:16px;
+  font-weight:600;
+}
+
+.bottom p{
+  font-size:10px;
+  color:#8b8b8b;
+}
